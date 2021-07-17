@@ -1,0 +1,65 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.head-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+
+}
+
+.head-container > h1 {
+    font-size: 100px;
+    color: white;
+
+}
+
+.head-container > p {
+    font-size: 32px;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    margin: 6px;
+   
+}
+
+@media screen and (max-width: 960px) {
+    
+.head-container > h1 {
+    font-size: 70px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .head-container > h1 {
+        font-size: 50px;
+       }
+
+    .head-container > p {
+        font-size: 30px;
+       }   
+
+    .head-btn {
+        display: block;
+        text-decoration: none;
+    }   
+
+    .btn {
+        width: 100%;
+    }
+
+
+}
